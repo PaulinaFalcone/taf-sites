@@ -6,4 +6,5 @@ public class BookingPage {
     String buttonContinueWitEmailXpath = "//div[3]/button/span";
     String inputPasswordXpath = "//*[@id='password']]";
     String buttonLogInXpath = "//div[2]/button";
+
 }
