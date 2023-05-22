@@ -1,3 +1,5 @@
+package by.itacademy.polina.sokolova.taf.sites;
+
 import by.itacademy.polina.sokolova.taf.sites.TripadvisorPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -8,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class TripadvisorPageTest {
+public class TripadvisorTest {
     @Test
     public void loginWithEmptyEmailPasswordInputs(){
         TripadvisorPage page = new TripadvisorPage();
