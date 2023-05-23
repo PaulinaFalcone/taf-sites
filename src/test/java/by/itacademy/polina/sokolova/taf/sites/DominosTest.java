@@ -11,6 +11,7 @@ import java.time.Duration;
 
 public class DominosTest {
     @Test
+
     public void LoginWithInvalidEmailAnyPassword() {
         DominosPage page = new DominosPage();
         ChromeDriver driver = new ChromeDriver();

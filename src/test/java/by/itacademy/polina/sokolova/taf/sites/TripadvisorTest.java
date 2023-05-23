@@ -1,6 +1,5 @@
 package by.itacademy.polina.sokolova.taf.sites;
 
-import by.itacademy.polina.sokolova.taf.sites.TripadvisorPage;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -21,7 +20,7 @@ public class TripadvisorTest {
         buttonSignin.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='ssoButtons']/button/span[1]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='regBody']")));
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
@@ -48,7 +47,7 @@ public class TripadvisorTest {
         buttonSignin.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='ssoButtons']/button/span[1]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='regBody']")));
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
@@ -73,7 +72,7 @@ public class TripadvisorTest {
         buttonSignin.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='ssoButtons']/button/span[1]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='regBody']")));
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
@@ -100,7 +99,7 @@ public class TripadvisorTest {
         buttonSignin.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='ssoButtons']/button/span[1]")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='regBody']")));
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
