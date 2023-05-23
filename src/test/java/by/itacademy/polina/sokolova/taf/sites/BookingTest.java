@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-public class BookingPageTest {
+public class BookingTest {
 
 
     @Test
@@ -19,16 +19,17 @@ public class BookingPageTest {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.booking.com/");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='b2indexPage']/div[1]/div/header/nav[1]/div[2]/span[3]/a")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='onetrust-policy-text']")));
+
+        WebElement buttonAccept = driver.findElement(By.xpath(page.buttonAccept));
+        buttonAccept.click();
 
         WebElement buttonLoginOrRegister = driver.findElement(By.xpath(page.buttonLoginOrRegisterXpath));
         buttonLoginOrRegister.click();
 
-        WebElement inputEmail = driver.findElement(By.xpath(page.inputEmailXpath));
-        inputEmail.clear();
-
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
+
         driver.quit();
 
     }
@@ -39,7 +40,10 @@ public class BookingPageTest {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.booking.com/");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='b2indexPage']/div[1]/div/header/nav[1]/div[2]/span[3]/a")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='onetrust-policy-text']")));
+
+        WebElement buttonAccept = driver.findElement(By.xpath(page.buttonAccept));
+        buttonAccept.click();
 
         WebElement buttonLoginOrRegister = driver.findElement(By.xpath(page.buttonLoginOrRegisterXpath));
         buttonLoginOrRegister.click();
@@ -49,6 +53,9 @@ public class BookingPageTest {
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
+
+        WebElement buttonLogin = driver.findElement(By.xpath(page.buttonLogInXpath));
+        buttonLogin.click();
         driver.quit();
     }
 
@@ -57,8 +64,12 @@ public class BookingPageTest {
         BookingPage page = new BookingPage();
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.booking.com/");
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='b2indexPage']/div[1]/div/header/nav[1]/div[2]/span[3]/a")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='onetrust-policy-text']")));
+
+        WebElement buttonAccept = driver.findElement(By.xpath(page.buttonAccept));
+        buttonAccept.click();
 
         WebElement buttonLoginOrRegister = driver.findElement(By.xpath(page.buttonLoginOrRegisterXpath));
         buttonLoginOrRegister.click();
@@ -68,6 +79,9 @@ public class BookingPageTest {
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
+
+        WebElement buttonLogin = driver.findElement(By.xpath(page.buttonLogInXpath));
+        buttonLogin.click();
         driver.quit();
     }
     @Test
@@ -75,8 +89,12 @@ public class BookingPageTest {
         BookingPage page = new BookingPage();
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.booking.com/");
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='b2indexPage']/div[1]/div/header/nav[1]/div[2]/span[3]/a")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='onetrust-policy-text']")));
+
+        WebElement buttonAccept = driver.findElement(By.xpath(page.buttonAccept));
+        buttonAccept.click();
 
         WebElement buttonLoginOrRegister = driver.findElement(By.xpath(page.buttonLoginOrRegisterXpath));
         buttonLoginOrRegister.click();
@@ -86,9 +104,6 @@ public class BookingPageTest {
 
         WebElement buttonContinueWitEmail = driver.findElement(By.xpath(page.buttonContinueWitEmailXpath));
         buttonContinueWitEmail.click();
-
-        WebElement inputPassword = driver.findElement(By.xpath(page.inputPasswordXpath));
-        inputPassword.clear();
 
         WebElement buttonLogin = driver.findElement(By.xpath(page.buttonLogInXpath));
         buttonLogin.click();
@@ -100,8 +115,12 @@ public class BookingPageTest {
         BookingPage page = new BookingPage();
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://www.booking.com/");
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='b2indexPage']/div[1]/div/header/nav[1]/div[2]/span[3]/a")));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='onetrust-policy-text']")));
+
+        WebElement buttonAccept = driver.findElement(By.xpath(page.buttonAccept));
+        buttonAccept.click();
 
         WebElement buttonLoginOrRegister = driver.findElement(By.xpath(page.buttonLoginOrRegisterXpath));
         buttonLoginOrRegister.click();

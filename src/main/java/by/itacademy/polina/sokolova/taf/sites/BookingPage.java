@@ -2,6 +2,7 @@ package by.itacademy.polina.sokolova.taf.sites;
 
 public class BookingPage {
     String buttonLoginOrRegisterXpath = "//*[@id='indexsearch']/div[1]/div/div/div/div[1]/a/span";
+    String buttonAccept = "//*[@id='onetrust-accept-btn-handler']";
     String inputEmailXpath = "//*[@id='username']";
     String buttonContinueWitEmailXpath = "//div[3]/button/span";
     String inputPasswordXpath = "//*[@id='password']]";
