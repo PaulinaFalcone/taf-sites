@@ -28,5 +28,6 @@ public class PizzatempoPage {
         WebElement inputPassword = driver.findElement(By.xpath(inputPasswordXpath));
         inputPassword.sendKeys(value);
     }
+
 }
 
