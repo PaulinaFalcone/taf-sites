@@ -1,4 +1,4 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package test;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import page.TripadvisorPage;
 
 import java.time.Duration;
 

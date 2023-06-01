@@ -1,4 +1,4 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package page;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;

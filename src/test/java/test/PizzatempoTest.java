@@ -1,8 +1,11 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import page.PizzatempoPage;
+import step.PizzaTempoStep;
+import util.Util;
 
 public class PizzatempoTest {
     ChromeDriver driver;

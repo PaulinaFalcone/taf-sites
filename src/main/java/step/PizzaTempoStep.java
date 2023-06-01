@@ -1,5 +1,6 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package step;
 import org.openqa.selenium.chrome.ChromeDriver;
+import page.PizzatempoPage;
 
 
 public class PizzaTempoStep {

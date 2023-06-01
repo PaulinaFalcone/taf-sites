@@ -1,4 +1,4 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package page;
 
 public class BookingPage {
     String buttonLoginOrRegisterXpath = "//*[@id='indexsearch']/div[1]/div/div/div/div[1]/a/span";

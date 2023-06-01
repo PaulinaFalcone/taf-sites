@@ -1,4 +1,4 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package page;
 
 public class TripadvisorPage {
     public String buttonSigninXpath = "//div[2]/a[3]";

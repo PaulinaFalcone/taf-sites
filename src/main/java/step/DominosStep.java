@@ -1,5 +1,6 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package step;
 
+import page.DominosPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DominosStep{

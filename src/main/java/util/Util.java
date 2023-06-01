@@ -1,4 +1,4 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package util;
 
 public class Util {
     public static String generateEmail() {

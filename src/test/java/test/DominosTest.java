@@ -1,9 +1,12 @@
-package by.itacademy.polina.sokolova.taf.sites;
+package test;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import page.DominosPage;
+import step.DominosStep;
+import util.Util;
 
 public class DominosTest {
     ChromeDriver driver;
