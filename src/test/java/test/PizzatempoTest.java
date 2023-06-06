@@ -12,8 +12,6 @@ public class PizzatempoTest {
     ChromeDriver driver;
     PizzatempoPage pizzatempoPage;
     PizzaTempoStep pizzaTempoStep;
-    String actualResult1;
-    String actualResult2;
 
     @BeforeEach
     public void warmUp() {
@@ -27,7 +25,7 @@ public class PizzatempoTest {
     public void loginWithEmptyData(){
 
         pizzaTempoStep.fillLoginForm("","");
-        pizzatempoPage.getResultErrorText();
+        String actualResult = pizzatempoPage.getResultErrorText();
         Assertions.assertEquals(actualResult1, "Ошибка");
     }
 
@@ -35,7 +33,7 @@ public class PizzatempoTest {
     public void loginWithInvalidEmail() {
 
        pizzaTempoStep.fillLoginForm("email", "");
-        pizzatempoPage.getResultErrorText();
+        String actualResult = pizzatempoPage.getResultErrorText();
         Assertions.assertEquals(actualResult1, "Ошибка");
     }
 
@@ -43,7 +41,7 @@ public class PizzatempoTest {
     public void loginWithEmptyEmailAnyPassword() {
 
         pizzaTempoStep.fillLoginForm("", Util.generatePassword());
-        pizzatempoPage.getResultErrorText();
+        String actualResult = pizzatempoPage.getResultErrorText();
         Assertions.assertEquals(actualResult1, "Ошибка");
     }
 
@@ -51,7 +49,7 @@ public class PizzatempoTest {
     public void loginWithValidEmailEmptyPassword() {
 
        pizzaTempoStep.fillLoginForm(Util.generateEmail(), "");
-        pizzatempoPage.getResultErrorText();
+        String actualResult = pizzatempoPage.getResultErrorText();
         Assertions.assertEquals(actualResult1, "Ошибка");
 
     }
@@ -60,7 +58,7 @@ public class PizzatempoTest {
     public void loginWithValidEmailAnyPassword() {
 
        pizzaTempoStep.fillLoginForm(Util.generateEmail(), Util.generatePassword());
-       pizzatempoPage.getResultSuccessEntranceText();
+        String actualResult = pizzatempoPage.getResultSuccessEntranceText();
         Assertions.assertEquals(actualResult2, "Алина");
 
     }
