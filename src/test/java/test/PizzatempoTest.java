@@ -26,7 +26,7 @@ public class PizzatempoTest {
 
         pizzaTempoStep.fillLoginForm("","");
         String actualResult = pizzatempoPage.getResultErrorText();
-        Assertions.assertEquals(actualResult1, "Ошибка");
+        Assertions.assertEquals(actualResult, "Ошибка");
     }
 
     @Test
@@ -34,7 +34,7 @@ public class PizzatempoTest {
 
        pizzaTempoStep.fillLoginForm("email", "");
         String actualResult = pizzatempoPage.getResultErrorText();
-        Assertions.assertEquals(actualResult1, "Ошибка");
+        Assertions.assertEquals(actualResult, "Ошибка");
     }
 
     @Test
@@ -42,7 +42,7 @@ public class PizzatempoTest {
 
         pizzaTempoStep.fillLoginForm("", Util.generatePassword());
         String actualResult = pizzatempoPage.getResultErrorText();
-        Assertions.assertEquals(actualResult1, "Ошибка");
+        Assertions.assertEquals(actualResult, "Ошибка");
     }
 
     @Test
@@ -50,7 +50,7 @@ public class PizzatempoTest {
 
        pizzaTempoStep.fillLoginForm(Util.generateEmail(), "");
         String actualResult = pizzatempoPage.getResultErrorText();
-        Assertions.assertEquals(actualResult1, "Ошибка");
+        Assertions.assertEquals(actualResult, "Ошибка");
 
     }
 
@@ -59,7 +59,7 @@ public class PizzatempoTest {
 
        pizzaTempoStep.fillLoginForm(Util.generateEmail(), Util.generatePassword());
         String actualResult = pizzatempoPage.getResultSuccessEntranceText();
-        Assertions.assertEquals(actualResult2, "Алина");
+        Assertions.assertEquals(actualResult, "Алина");
 
     }
     @AfterEach
